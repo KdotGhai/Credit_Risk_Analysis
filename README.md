@@ -21,7 +21,7 @@ We will evaluate the performance of these models and make a recommendation on wh
   - Naive Random Oversampling results:
 <p align="center">
     <br>  </br>
-<img src="https://github.com/KdotGhai/Credit_Risk_Analysis/blob/608df1ecfc22e18b050f9b106636858274850b45/Images/RESAMPLING_Naive_Random_Oversampling.png" width="600" height="120"/>
+<img src="https://github.com/KdotGhai/Credit_Risk_Analysis/blob/608df1ecfc22e18b050f9b106636858274850b45/Images/RESAMPLING_Naive_Random_Oversampling.png" />
 </p>
 
   - SMOTE Oversampling results:
