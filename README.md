@@ -24,7 +24,7 @@ We will evaluate the performance of these models and make a recommendation on wh
   <br>  </br>
 </p>
 
-  - SMOTE Oversampling results:SMOTE(synthetic minority oversampling technique) intends to generate similar datasets as `Random OverSampling` however, it does so differently by implementing [K-Nearest Neighbor algorithm]. Essentially,<em>"a simple algorithm that stores all the available cases and classifies the new data or case based on a similarity measure."</em> 
+  - SMOTE Oversampling results:SMOTE(synthetic minority oversampling technique) intends to generate similar datasets as `Random OverSampling` however, it does so differently by implementing [K-Nearest Neighbor algorithm](https://towardsdatascience.com/a-simple-introduction-to-k-nearest-neighbors-algorithm-b3519ed98e). Essentially,<em>"a simple algorithm that stores all the available cases and classifies the new data or case based on a similarity measure."</em> 
 <p align="center">
   
 <img src="https://github.com/KdotGhai/Credit_Risk_Analysis/blob/608df1ecfc22e18b050f9b106636858274850b45/Images/RESAMPLING_SMOTE_OverSampling.png"/>
