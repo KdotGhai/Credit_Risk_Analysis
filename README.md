@@ -25,3 +25,5 @@ We will evaluate the performance of these models and make a recommendation on wh
 
 - ### Combination (Over and Under) Sampling
   - SMOTEENN algorithm
+
+## Summary
