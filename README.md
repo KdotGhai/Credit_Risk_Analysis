@@ -16,3 +16,12 @@ We will evaluate the performance of these models and make a recommendation on wh
 - Software: Python 3.7.9scikit-learn,[scikit-learn](https://scikit-learn.org/stable/install.html), Jupyter Notebook 6.0.3
 
 ## Results (Balanced Accuracy Scores, Confusion Matrixes and Imbalanced Classification Reports)
+- ### OverSampled
+  - Naive Random Oversampling results:
+  - SMOTE Oversampling results:
+
+- ### UnderSampled
+  - UnderSampling via Cluster Centroids Algorithm:
+
+- ### Combination (Over and Under) Sampling
+  - SMOTEENN algorithm
