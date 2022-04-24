@@ -24,7 +24,7 @@ We will evaluate the performance of these models and make a recommendation on wh
   <br>  </br>
 </p>
 
-  - SMOTE Oversampling results:SMOTE(synthetic minority oversampling technique) intends to generate similar datasets as `Random OverSampling` however, it does so differently by implementing [K-Nearest Neighbor algorithm](https://towardsdatascience.com/a-simple-introduction-to-k-nearest-neighbors-algorithm-b3519ed98e). Essentially,<em>"a simple algorithm that stores all the available cases and classifies the new data or case based on a similarity measure."</em>  
+  - SMOTE Oversampling results:SMOTE(synthetic minority oversampling technique) intends to generate similar datasets as `RandomOverSampler` however, it does so differently by implementing [K-Nearest Neighbor algorithm](https://towardsdatascience.com/a-simple-introduction-to-k-nearest-neighbors-algorithm-b3519ed98e). Essentially,<em>"a simple algorithm that stores all the available cases and classifies the new data or case based on a similarity measure."</em>  
 &nbsp;&nbsp;&nbsp;&nbsp;This resampled data also produces a roughly 65%(64.62) however, due to SMOTE implementation it was able to produce a higher reacall score for "low_risk" than it did in Random OverSampling thus providing us a higher f1 score. Although both methods suffer from the flaws of OverSampling(relying on random generated data not part of original dataset), SMOTE was able to mitigate some of the bias when generating data from the minority class when addressing class imbalance in the dataset.
 <p align="center">
   
@@ -48,6 +48,17 @@ We will evaluate the performance of these models and make a recommendation on wh
    <br>  </br>
 </p>
 
-## Results(ENSEMBLED)
+## Results(ENSEMBLED)  
 
+- ### Balanced Random Forest Classifier results:
+<p align="center">
+<img src="https://github.com/KdotGhai/Credit_Risk_Analysis/blob/1c91742c3fc45b934a0ac2f40a564985dedd895f/Images/ENSEMBLE_BalancedRandomForestClassifier.png"/>
+   <br>  </br>
+</p>
+
+- ### Easy Ensemble AdaBoost Classifier:
+<p align="center">
+<img src="https://github.com/KdotGhai/Credit_Risk_Analysis/blob/1c91742c3fc45b934a0ac2f40a564985dedd895f/Images/ENSEMBLE_EasyEnsembleClassifier_AdaBoosting.png"/>
+   <br>  </br>
+</p>
 ## Summary
