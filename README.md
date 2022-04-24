@@ -24,7 +24,8 @@ We will evaluate the performance of these models and make a recommendation on wh
   <br>  </br>
 </p>
 
-  - SMOTE Oversampling results:SMOTE(synthetic minority oversampling technique) intends to generate similar datasets as `Random OverSampling` however, it does so differently by implementing [K-Nearest Neighbor algorithm](https://towardsdatascience.com/a-simple-introduction-to-k-nearest-neighbors-algorithm-b3519ed98e). Essentially,<em>"a simple algorithm that stores all the available cases and classifies the new data or case based on a similarity measure."</em> This resampled data also produces a roughly 65%(64.62) however, due to SMOTE implementation it was able to produce a higher reacall score for "low_risk" than it did in Random OverSampling thus providing us a higher f1 score. Although both methods suffer from the flaws of OverSampling, SMOTE was able to mitigate some of the bias when generating data from the minority class when addressing class imbalance in the dataset
+  - SMOTE Oversampling results:SMOTE(synthetic minority oversampling technique) intends to generate similar datasets as `Random OverSampling` however, it does so differently by implementing [K-Nearest Neighbor algorithm](https://towardsdatascience.com/a-simple-introduction-to-k-nearest-neighbors-algorithm-b3519ed98e). Essentially,<em>"a simple algorithm that stores all the available cases and classifies the new data or case based on a similarity measure."</em>  
+&nbsp;&nbsp;&nbsp;&nbsp;This resampled data also produces a roughly 65%(64.62) however, due to SMOTE implementation it was able to produce a higher reacall score for "low_risk" than it did in Random OverSampling thus providing us a higher f1 score. Although both methods suffer from the flaws of OverSampling(relying on random generated data not part of original dataset), SMOTE was able to mitigate some of the bias when generating data from the minority class when addressing class imbalance in the dataset.
 <p align="center">
   
 <img src="https://github.com/KdotGhai/Credit_Risk_Analysis/blob/608df1ecfc22e18b050f9b106636858274850b45/Images/RESAMPLING_SMOTE_OverSampling.png"/>
@@ -32,16 +33,17 @@ We will evaluate the performance of these models and make a recommendation on wh
 </p>
 
 - ### UnderSampled
-  - UnderSampling via Cluster Centroids Algorithm: Here we will do the inverse of OverSampling, we will downscale the Large Class to match the minority class. In doing so we are working with 100% of real acquired data within the data set at the exchange of losing important information.
+  - UnderSampling via Cluster Centroids Algorithm: Here we will do the inverse of OverSampling, we will downscale the Large Class to match the minority class. In doing so we are working with 100% of real acquired data within the data set at the exchange of losing important information.  
+&nbsp;&nbsp;&nbsp;&nbsp;Here we are seeing accuracy roughly at 65%(64.62) however, due to the nature of crunching down the classes we are seeing clear signs of bias. The recall percentages for High_Risk:69% and Low_Risk:40% inidicates that the minority class forced the dataset into contaiting mostly "High Risk Credit Scores," giving us a false sense of concern since we lost so much important info.
 <p align="center">
 <img src="https://github.com/KdotGhai/Credit_Risk_Analysis/blob/608df1ecfc22e18b050f9b106636858274850b45/Images/RESAMPLING_Cluster_Centroid_UnderSampling.png"/>
     <br>  </br>
 </p>
 
 - ### Combination (Over and Under) Sampling
-  - SMOTEENN algorithm:
+  - SMOTEENN algorithm: SMOTEENN combines the SMOTE and Edited Nearest Neighbors (ENN) algorithms, a two step process:First, oversample the minority class with SMOTE then second, clean the resulting data with an undersampling strategy. If the two nearest neighbors of a data point belong to two different classes, that data point is dropped. Essentially, we generate results but keep those with ONLY a single class identifying them thus ensuring we work with the benifts of SMOTE but without sacrificing important info from the original dataset.  
+&nbsp;&nbsp;&nbsp;&nbsp; Here the accuracy score is roughly 54.5%(54.47), it creates the impression that a little over half of the dataset after being resampled is accurate. However, despite having a low recall value for low_risk, the f1 score(.73 or 73%) indicates the dataset to be more accurate than it apears to be. It appears this is providing the most desirable results but we must remember that SMOTEENN has its flaws that being, by oversampling the dataset with similarities in class measures but dropping datasets with more than one class identifier the dataset actaully becomes unbalanced again.
 <p align="center">
-   
 <img src="https://github.com/KdotGhai/Credit_Risk_Analysis/blob/608df1ecfc22e18b050f9b106636858274850b45/Images/RESAMPLING_Combination_(Over%20and%20Under)_Sampling.png"/>
    <br>  </br>
 </p>
