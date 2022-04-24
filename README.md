@@ -12,7 +12,7 @@ We adopted the following procedure:
 We will evaluate the performance of these models and make a recommendation on whether they should be used to predict credit risk.
 
 ## Resources
-- Data Source: LoanStats_2019Q1.csv
-- Software: Python 3.7.9, Anaconda Navigator 1.9.12, Conda 4.8.4, Jupyter Notebook 6.0.3
+- Data Source: LoanStats_2019Q1.csv(Not provided due to file being too Large to upload)
+- Software: Python 3.7.9scikit-learn,[scikit-learn](https://scikit-learn.org/stable/install.html), Jupyter Notebook 6.0.3
 
 ## Results (Balanced Accuracy Scores, Confusion Matrixes and Imbalanced Classification Reports)
