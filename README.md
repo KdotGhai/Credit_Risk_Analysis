@@ -47,4 +47,5 @@ We will evaluate the performance of these models and make a recommendation on wh
 <img src="https://github.com/KdotGhai/Credit_Risk_Analysis/blob/608df1ecfc22e18b050f9b106636858274850b45/Images/RESAMPLING_Combination_(Over%20and%20Under)_Sampling.png"/>
    <br>  </br>
 </p>
+
 ## Summary
