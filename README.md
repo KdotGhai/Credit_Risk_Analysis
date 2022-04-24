@@ -15,15 +15,32 @@ We will evaluate the performance of these models and make a recommendation on wh
 - Data Source: LoanStats_2019Q1.csv(Not provided due to file being too Large to upload)
 - Software: Python 3.7.9scikit-learn,[scikit-learn](https://scikit-learn.org/stable/install.html), Jupyter Notebook 6.0.3
 
-## Results (Balanced Accuracy Scores, Confusion Matrixes and Imbalanced Classification Reports)
+## Results 
 - ### OverSampled
+
   - Naive Random Oversampling results:
+  <p align="center">
+    <br>  </br>
+<img src="https://github.com/KdotGhai/Credit_Risk_Analysis/blob/608df1ecfc22e18b050f9b106636858274850b45/Images/RESAMPLING_Naive_Random_Oversampling.png" width="600" height="120"/>
+</p>
+
   - SMOTE Oversampling results:
+  <p align="center">
+    <br>  </br>
+<img src="https://github.com/KdotGhai/Credit_Risk_Analysis/blob/608df1ecfc22e18b050f9b106636858274850b45/Images/RESAMPLING_SMOTE_OverSampling.png" width="600" height="120"/>
+</p>
 
 - ### UnderSampled
   - UnderSampling via Cluster Centroids Algorithm:
+  <p align="center">
+    <br>  </br>
+<img src="https://github.com/KdotGhai/Credit_Risk_Analysis/blob/608df1ecfc22e18b050f9b106636858274850b45/Images/RESAMPLING_Cluster_Centroid_UnderSampling.png" width="600" height="120"/>
+</p>
 
 - ### Combination (Over and Under) Sampling
-  - SMOTEENN algorithm
-
+  - SMOTEENN algorithm:
+  <p align="center">
+    <br>  </br>
+<img src="https://github.com/KdotGhai/Credit_Risk_Analysis/blob/608df1ecfc22e18b050f9b106636858274850b45/Images/RESAMPLING_Combination_(Over%20and%20Under)_Sampling.png" width="600" height="120"/>
+</p>
 ## Summary
