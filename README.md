@@ -1,8 +1,8 @@
 # Credit_Risk_Analysis
 Module 17 challenge
 
-## Analysis Overview
-In this project, we use Python to build and evaluate several machine learning models to predict credit risk.\
+## Overview
+&nbsp;&nbsp;&nbsp;&nbsp;In this project, we use Python to build and evaluate several machine learning models to predict credit risk.\
 We adopted the following procedure:
 - oversample the data using the **RandomOverSampler** and **SMOTE** algorithms.
 - Undersample the data using the **ClusterCentroids** algorithm.
@@ -50,7 +50,8 @@ We will evaluate the performance of these models and make a recommendation on wh
 
 ## Results(ENSEMBLED)  
 
-- ### Balanced Random Forest Classifier results:
+- ### Balanced Random Forest Classifier results: The balanced accuracy score is roughly 79%(78.77), upon further inspection we notice that the f1 score has drastically increased to `.95`. This method of grouping data will have similarities to "Random OverSampling" since we are overfitting the data to deal with class imbalance thus leaving us with a weak learning machine.
+[Balanced Random Forest in python](https://www.linuxtut.com/en/0f6faf5629f6c563d36f/)
 <p align="center">
 <img src="https://github.com/KdotGhai/Credit_Risk_Analysis/blob/1c91742c3fc45b934a0ac2f40a564985dedd895f/Images/ENSEMBLE_BalancedRandomForestClassifier.png"/>
    <br>  </br>
